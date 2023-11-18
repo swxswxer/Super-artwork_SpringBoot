@@ -3,6 +3,7 @@ package com.swx.superartwork;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.swx.superartwork.controller.utils.R;
 import com.swx.superartwork.dao.PaintingDao;
+import com.swx.superartwork.domain.User;
 import com.swx.superartwork.service.CommentService;
 import com.swx.superartwork.service.PaintingService;
 import com.swx.superartwork.service.UserService;
@@ -33,6 +34,13 @@ class SuperArtworkApplicationTests {
         QueryWrapper qw = new QueryWrapper();
         qw.eq("painting_id",1);
         commentService.list(qw).forEach(System.out::println);
+    }
+
+    @Test
+    void testUserService(){
+        User user = new User();
+       user =  userService.getUser("swxswx");
+        System.out.println(user);
     }
 
 }
