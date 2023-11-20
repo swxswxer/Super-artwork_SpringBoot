@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface UserService extends IService<User> {
 
-    User getUser(String username);
+    User getUserByName(String username);
 
 }

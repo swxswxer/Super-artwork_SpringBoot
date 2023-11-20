@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ddc44e6-b107-4863-a417-721954ecb84c" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/controller/RecordingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/dao/RecordingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/domain/Recording.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/service/RecordingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/service/impl/RecordingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperArtwork/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/controller/PaintingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/controller/PaintingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/domain/Painting.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/domain/Painting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SuperArtwork/src/main/java/com/swx/superartwork/service/impl/UserServiceImpl.java" afterDir="false" />
@@ -35,7 +39,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2RBLVkoR0utPnDn0Wx33172J3rH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -144,7 +150,7 @@
       <workItem from="1687267809590" duration="2286000" />
       <workItem from="1688390771321" duration="598000" />
       <workItem from="1693535781410" duration="556000" />
-      <workItem from="1700016530155" duration="13846000" />
+      <workItem from="1700016530155" duration="27896000" />
     </task>
     <servers />
   </component>

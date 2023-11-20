@@ -11,4 +11,6 @@ public class Painting {
     String image;
     String Style;
     String date;
+    String price;
+    String owner;
 }

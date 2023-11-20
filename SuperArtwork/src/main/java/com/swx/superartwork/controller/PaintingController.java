@@ -2,7 +2,10 @@ package com.swx.superartwork.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.swx.superartwork.controller.utils.R;
+import com.swx.superartwork.domain.Painting;
+import com.swx.superartwork.domain.User;
 import com.swx.superartwork.service.PaintingService;
+import com.swx.superartwork.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 @CrossOrigin
@@ -11,6 +14,8 @@ import org.springframework.web.bind.annotation.*;
 public class PaintingController {
     @Autowired
     private PaintingService paintingService;
+    @Autowired
+    private UserService userService;
 
 
     //   - `GET /paintings`: 获取所有画作的列表。
@@ -41,6 +46,16 @@ public class PaintingController {
         QueryWrapper qw = new QueryWrapper();
         qw.eq("artist",author);
         return new R(true, paintingService.list(qw));
+    }
+
+    @PostMapping("/updataOwner")
+    public R updataOwner(@RequestParam("userId") Integer userId, @RequestParam("paintingId") Integer paintingId) {
+
+        Painting painting = paintingService.getById(paintingId);
+        User user = userService.getById(userId);
+        painting.setOwner(user.getUsername());
+
+        return new R(true, paintingService.updateById(painting));
     }
 
 

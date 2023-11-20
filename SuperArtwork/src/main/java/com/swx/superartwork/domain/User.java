@@ -7,6 +7,14 @@ public class User {
     String username;
     String userpwd;
 
+    String phoneNumber;
+
+    String city;
+
+    String remark;
+
+    String  contactAddress ;
+
     public User() {
     }
 

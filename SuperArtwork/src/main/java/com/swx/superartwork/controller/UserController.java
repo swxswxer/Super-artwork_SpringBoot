@@ -24,7 +24,7 @@ public class UserController {
     public R login(@RequestParam("username") String username ,@RequestParam("userpwd") String userpwd) {
         System.out.println(username);
         System.out.println(userpwd);
-        User user = userService.getUser(username);
+        User user = userService.getUserByName(username);
         if(user==null){
             return new R(false,"用户名不存在");
         }
@@ -40,7 +40,7 @@ public class UserController {
     public R register (@RequestParam("username") String username ,@RequestParam("userpwd") String userpwd){
         System.out.println(username);
         System.out.println(userpwd);
-        User user = userService.getUser(username);
+        User user = userService.getUserByName(username);
         if(user==null){
             userService.save(new User(username,userpwd));
             return new R(true,"注册成功");
@@ -48,6 +48,16 @@ public class UserController {
             return new R(false,"用户名已存在");
         }
 
+    }
+
+    @GetMapping("/{id}")
+    public R getById(@PathVariable Integer id) {
+        return new R(true, userService.getById(id));
+    }
+
+    @PostMapping("/updata")
+    public R updata(@RequestBody User user){
+        return new R(true,userService.updateById(user));
     }
 
 

@@ -38,9 +38,11 @@ class SuperArtworkApplicationTests {
 
     @Test
     void testUserService(){
-        User user = new User();
-       user =  userService.getUser("swxswx");
-        System.out.println(user);
+      ;
+        User user = userService.getById(1);
+        user.setRemark("test");
+        userService.updateById(user);
+
     }
 
 }

@@ -13,7 +13,7 @@ public class UserServiceImpl extends ServiceImpl<UserDao, User> implements UserS
     UserDao userDao;
 
     @Override
-    public User getUser(String username) {
+    public User getUserByName(String username) {
         return userDao.getByUsername(username);
     }
 }
